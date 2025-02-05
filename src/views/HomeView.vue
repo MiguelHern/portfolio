@@ -26,8 +26,8 @@ const techCategories = {
           <h1 class="text-5xl">Ingeniero en <br />sistemas</h1>
           <ul class="flex gap-3 md:justify-start justify-center">
             <li>
-              <a href="">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              <a href="" role="link">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Icono de GitHub"
                   class="stroke-black hover:stroke-primary transition-colors duration-200 ease-in-out">
                   <g clip-path="url(#clip0_10_109)">
                     <path
@@ -43,8 +43,8 @@ const techCategories = {
               </a>
             </li>
             <li>
-              <a href="">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              <a href="" role="link">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Icono de LinkedIn"
                   class="stroke-black hover:stroke-primary transition-colors duration-200 ease-in-out">
                   <path
                     d="M21.3333 10.6667C23.4551 10.6667 25.4899 11.5095 26.9902 13.0098C28.4905 14.5101 29.3333 16.5449 29.3333 18.6667V28H24V18.6667C24 17.9594 23.719 17.2811 23.2189 16.781C22.7189 16.2809 22.0406 16 21.3333 16C20.6261 16 19.9478 16.2809 19.4477 16.781C18.9476 17.2811 18.6667 17.9594 18.6667 18.6667V28H13.3333V18.6667C13.3333 16.5449 14.1762 14.5101 15.6765 13.0098C17.1768 11.5095 19.2116 10.6667 21.3333 10.6667Z"
@@ -57,12 +57,16 @@ const techCategories = {
               </a>
             </li>
           </ul>
-          <button class="btn btn-primary rounded-sm">Descargar CV</button>
+
+          <button aria-label="Descargar Currículum Vitae"
+            class="btn items-center bg-primary hover:bg-primary/90 text-white group rounded-md justify-center">Descargar
+            CV</button>
+
         </div>
       </div>
 
       <div class="h-full -z-50">
-        
+
       </div>
 
       <div class="absolute top-1/2 -translate-y-1/2 right-0 hidden md:flex flex-col items-end">
@@ -81,10 +85,10 @@ const techCategories = {
 
       <div class="space-y-12 mt-18">
         <CarouselComponent />
-        <RouterLink :to="'/projects'"
+        <RouterLink :to="'/projects'" aria-label="Ir a la página de todos los proyectos"
           class="flex gap-3 btn items-center bg-primary hover:bg-primary/90 text-white group rounded-md justify-center">
           Ver todos los proyectos
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-label="Icono de carpeta"
             stroke="currentColor" class="size-6 group-hover:scale-110 transition-transform duration-300 ease-in-out">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -95,7 +99,7 @@ const techCategories = {
 
     <section class="py-18" id="projects">
       <h2 class="">Proyectos</h2>
-      <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id"
+      <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id" aria-label="Ir al proyecto seleccionado"
         class="space-y-12 block mt-18">
         <CardProjectsHome v-bind="project" />
       </RouterLink>
