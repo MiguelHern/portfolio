@@ -62,8 +62,7 @@ const techCategories = {
       </div>
 
       <div class="h-full -z-50">
-        <iframe src="https://my.spline.design/robotfollowcursorforlandingpage-c350a36ea0746e001c43284802342ee2/"
-          frameborder="0" width="100%" height="100%"></iframe>
+        
       </div>
 
       <div class="absolute top-1/2 -translate-y-1/2 right-0 hidden md:flex flex-col items-end">
@@ -82,7 +81,8 @@ const techCategories = {
 
       <div class="space-y-12 mt-18">
         <CarouselComponent />
-        <RouterLink :to="'/projects'" class="flex gap-3 btn items-center bg-primary hover:bg-primary/90 text-white group rounded-md justify-center">
+        <RouterLink :to="'/projects'"
+          class="flex gap-3 btn items-center bg-primary hover:bg-primary/90 text-white group rounded-md justify-center">
           Ver todos los proyectos
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6 group-hover:scale-110 transition-transform duration-300 ease-in-out">
