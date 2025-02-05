@@ -128,7 +128,6 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-transform: uppercase;
     letter-spacing: 1px;
   }
 
@@ -166,5 +165,19 @@
 
   .btn-accent:hover {
     background-color: darken(var(--color-accent), 10%);
+  }
+  @media (max-width: 639px) {
+    .btn{
+      font-size: var(--text-sm);
+    }
+    .btn-primary {
+      padding: 0.5rem 1rem; 
+    }
+  }
+
+  @media (min-width: 640px) {
+    .btn-primary {
+      padding: 0.75rem 1.5rem;
+    }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group w-full card p-12 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-gray-600 cursor-pointer rounded-3xl shadow-md shadow-gray-600"
+    class="group w-full card p-12 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-gray-600 cursor-pointer rounded-lg shadow-md shadow-gray-600"
   >
     <header class="flex justify-between ">
       <span>{{ id }} | {{ rol }}</span>
