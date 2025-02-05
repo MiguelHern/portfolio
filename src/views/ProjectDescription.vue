@@ -164,7 +164,7 @@ h4 {
 p,
 ul,
 time {
-  color: var(--color-dark-text-bgblack);
+  color: var(--color-gray-400);
   font-size: var(--text-lg);
 }
 
