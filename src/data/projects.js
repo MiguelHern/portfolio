@@ -9,7 +9,7 @@ export const projects = [
     },
     rol: 'Desarrollador Frontend',
     cover: {
-      url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png',
+      url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png',
       description: 'Portada del proyecto FisioLabs',
     },
     link: 'https://github.com/miusuario/fisiolab',
@@ -49,8 +49,8 @@ export const projects = [
       'Base de datos': 'Colaboré en el diseño e implementación de la base de datos en MySQL.',
     },
     gallery: [
-      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 1' },
-      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 2' },
+      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 1' },
+      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 2' },
     ],
   },
   {
@@ -63,7 +63,7 @@ export const projects = [
     },
     rol: 'Desarrollador Frontend',
     cover: {
-      url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1738032015/d0c6e9e7-9158-4893-8919-0b11528a1d6e.png',
+      url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1738032015/d0c6e9e7-9158-4893-8919-0b11528a1d6e.png',
       description: 'Portada del proyecto FisioLabs',
     },
     link: 'https://github.com/miusuario/fisiolab',
@@ -103,8 +103,8 @@ export const projects = [
       'Base de datos': 'Colaboré en el diseño e implementación de la base de datos en MySQL.',
     },
     gallery: [
-      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 1' },
-      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 2' },
+      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 1' },
+      { url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png', description: 'Descripción de la imagen 2' },
     ],
   },
 
