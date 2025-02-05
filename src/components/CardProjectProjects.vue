@@ -2,7 +2,7 @@
   <div class="overflow-hidden rounded-lg border border-gray-200 shadow-md">
     <div class="relative aspect-video">
       <img
-        :src="image || '/placeholder.svg'"
+        :src="image || '/placeholder.svg'" loading="lazy" 
         :alt="title"
         class="object-cover w-full h-full transition-transform hover:scale-105"
       />

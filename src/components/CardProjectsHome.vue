@@ -8,7 +8,7 @@
     </header>
     <div class="grid grid-cols-1 lg:grid-cols-5 py-8 items-center">
       <div class="col-span-2 aspect-video">
-        <img :src="cover.url" alt="" class="h-full rounded-md" />
+        <img :src="cover.url" alt="" class="h-full rounded-md" loading="lazy"/>
       </div>
       <div class="col-span-3 lg:ml-12 mt-4 md:mt-8 lg:mt-0">
         <h4 class="text-4xl">{{ title }}</h4>

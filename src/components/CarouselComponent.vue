@@ -57,10 +57,10 @@ const handleTouchEnd = () => {
     <div v-for="project in projects" :key="project.id"
       class="w-full flex-shrink-0 flex text-black text-2xl font-bold">
       <div class="flex flex-col">
-        <img :src="project.cover.url" alt="" class="aspect-video border border-primary/25 rounded-md">
+        <img :src="project.cover.url" alt="" class="aspect-video border border-primary/25 rounded-md" loading="lazy" >
         <div class="grid grid-cols-2">
           <div>
-            <p class="mt-4">{{ project.title }}</p>
+            <p class="mt-4">{{ project.description.category }}</p>
             <ul class="flex flex-wrap gap-2 mt-2">
               <li v-for="tag in project.tags" :key="tag"
                 class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-xs">
