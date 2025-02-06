@@ -1,6 +1,6 @@
 <template>
   <div class="relative flex items-center justify-center h-screen bg-white overflow-hidden">
-    <div class="text-center z-10">
+    <div class="text-center z-3">
       <h1 :class="{ 'opacity-100 translate-y-0': showContent }"
         class="text-5xl font-bold text-gray-800 opacity-0 transform translate-y-5 transition-all duration-500">
         {{ title }}
