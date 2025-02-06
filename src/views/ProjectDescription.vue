@@ -41,7 +41,7 @@
               >{{ project.timeline.start }} - {{ project.timeline.end }}</time
             >
           </div>
-          <div class="p-4 col-span-2 md:col-span-1">
+          <div class="p-4  col-span-2 md:col-span-1">
             <h3>Responsabilidades</h3>
             <ul class="text-gray-600">
               <li v-for="responsibility in project.responsibilities" :key="responsibility">
@@ -49,7 +49,7 @@
               </li>
             </ul>
           </div>
-          <div class="p-4 col-span-2 md:col-span-1">
+          <div class="p-4 md:pl-4 pl-0 col-span-2 md:col-span-1">
             <h3>Tecnologías</h3>
             <ul class="text-gray-600">
               <li v-for="tech in project.technologies" :key="tech">{{ tech }}</li>

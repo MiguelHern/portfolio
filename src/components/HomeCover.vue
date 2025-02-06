@@ -10,7 +10,7 @@
         Miguel <span class="text-primary">Hernández</span>
       </p>
 
-      <button @click="scrollToProjects" :class="{ 'opacity-100 translate-y-0': showContent }"
+      <button @click="downloadPdf" :class="{ 'opacity-100 translate-y-0': showContent }"
         class="mt-6 px-6 py-3 text-white bg-primary rounded-full opacity-0 transform translate-y-8 transition-all duration-300 delay-400 hover:bg-primary/80">
         Descargar CV
       </button>
@@ -35,10 +35,6 @@ onMounted(() => {
   }, 500);
 });
 
-const scrollToProjects = () => {
-  console.log('Scrolling to projects...');
-};
-
 const circles = computed(() =>
   Array.from({ length: 5 }, () => ({
     width: `${Math.random() * 150 + 50}px`,
@@ -48,6 +44,13 @@ const circles = computed(() =>
     animationDuration: `${Math.random() * 20 + 10}s`
   }))
 );
+
+const downloadPdf = () => {
+  const link = document.createElement('a');
+  link.href = '/MiguelHernandezCV.pdf';
+  link.download = 'Miguel Hernández - Currículum.pdf';
+  link.click();
+};
 </script>
 
 <style scoped>
