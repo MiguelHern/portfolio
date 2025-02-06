@@ -27,7 +27,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 
-const name = ref('Miguel Hernández');
 const title = ref('Desarrollador Web');
 const showContent = ref(false);
 
