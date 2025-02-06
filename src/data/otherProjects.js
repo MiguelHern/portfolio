@@ -1,4 +1,4 @@
-export const projects = [
+export const otherProjects = [
   {
     id: '1',
     title: 'FisioLab',
@@ -12,7 +12,7 @@ export const projects = [
       url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png',
       description: 'Portada del proyecto FisioLabs',
     },
-    link: false,
+    link: 'https://github.com/miusuario/fisiolab',
     tags: ['Vue 3', 'Tailwind CSS', 'MySQL'],
     svg: `
       <svg
@@ -66,7 +66,7 @@ export const projects = [
       url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1738032015/d0c6e9e7-9158-4893-8919-0b11528a1d6e.png',
       description: 'Portada del proyecto FisioLabs',
     },
-    link: false,
+    link: 'https://github.com/miusuario/fisiolab',
     tags: ['Vue 3', 'Tailwind CSS', 'MySQL'],
     svg: `
       <svg

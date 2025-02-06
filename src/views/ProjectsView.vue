@@ -1,16 +1,22 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20 gap-4">
-    <CardProjectProjects
-      :title="'FisioLab'"
-      :description="'Sistema'"
-      :image="'https://res.cloudinary.com/djfokdod6/image/upload/v1737587742/ob6w8i1rapxxir9v1kn9.png'"
-      :link="'https://github.com/miusuario/fisiolab'"
-      :tags="['Vue 3', 'Tailwind CSS', 'MySQL']"
-    />
+  <div class="mt-16">
+    <h2 class="text-2xl text-start mb-4">Proyectos destacados</h2>
+    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+      <CardProjects v-for="project in projects" :key="project.id" v-bind="project" />
+    </div>
+    <h2 class="text-2xl text-start my-4">Otros proyectos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <CardProjects v-for="project in otherProjects" :key="project.id" v-bind="project" />
+    </div>
   </div>
+
 </template>
 
 <script setup>
-import CardProjectProjects from '@/components/CardProjectProjects.vue'
+import CardProjects from '@/components/cards/CardProjectProjects.vue'
+import { projects } from '@/data/projects';
+import { otherProjects } from '@/data/otherProjects';
+
+
 
 </script>

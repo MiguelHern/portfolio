@@ -1,11 +1,11 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import CardTechnologies from '@/components/CardTechnologies.vue'
-import CardProjectsHome from '@/components/CardProjectsHome.vue'
+import CardTechnologies from '@/components/cards/CardTechnologies.vue'
+import CardProjectsHome from '@/components/cards/CardProjectsHome.vue'
 import { projects } from '@/data/projects'
 import { technologiesFrontEnd, technologiesBackEnd, technologiesTools } from '@/data/technologies'
 import { education } from '@/data/education'
-import CardEducation from '@/components/CardEducation.vue'
+import CardEducation from '@/components/cards/CardEducationHome.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import HomeCover from '@/components/HomeCover.vue'
 
@@ -33,7 +33,7 @@ onBeforeUnmount(() => {
 
 <template>
   <main>
-    <HomeCover/>
+    <HomeCover />
 
     <section v-if="isMobile" class="py-18" id="projectsss">
       <h2>Proyectos</h2>
@@ -55,9 +55,9 @@ onBeforeUnmount(() => {
     <section v-if="!isMobile" class="py-18" id="projects">
       <h2>Proyectos</h2>
 
-        <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id"
+      <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id"
         aria-label="Ir al proyecto seleccionado" class="space-y-12 block mt-18">
-        <CardProjectsHome v-bind="project"/>
+        <CardProjectsHome v-bind="project" />
       </RouterLink>
 
 
@@ -121,8 +121,4 @@ onBeforeUnmount(() => {
     </section>
   </main>
 </template>
-<style scoped>
-
-
-
-</style>
+<style scoped></style>
