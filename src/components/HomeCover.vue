@@ -2,8 +2,8 @@
   <div class="relative flex items-center justify-center h-screen bg-white overflow-hidden">
     <div class="text-center z-3">
       <h1 :class="{ 'opacity-100 translate-y-0': showContent }"
-        class="text-5xl font-bold text-gray-800 opacity-0 transform translate-y-5 transition-all duration-500">
-        {{ title }}
+        class="text-5xl font-bold text-gray-800 opacity-0 transform translate-y-5 transition-all duration-500 color">
+        Desarrollador web
       </h1>
       <p :class="{ 'opacity-100 translate-y-0': showContent }"
         class="text-xl text-gray-600 opacity-0 transform translate-y-5 transition-all duration-500 delay-200">
@@ -27,7 +27,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 
-const title = ref('Desarrollador Web');
 const showContent = ref(false);
 
 onMounted(() => {
@@ -64,4 +63,5 @@ const circles = computed(() =>
 .animate-float {
   animation: float linear infinite;
 }
+
 </style>

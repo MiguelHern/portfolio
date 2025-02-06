@@ -54,10 +54,13 @@ onBeforeUnmount(() => {
 
     <section v-if="!isMobile" class="py-18" id="projects">
       <h2>Proyectos</h2>
-      <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id"
+
+        <RouterLink :to="'/project/' + project.id" v-for="project in projects" :key="project.id"
         aria-label="Ir al proyecto seleccionado" class="space-y-12 block mt-18">
-        <CardProjectsHome v-bind="project" />
+        <CardProjectsHome v-bind="project"/>
       </RouterLink>
+
+
     </section>
 
 
@@ -118,3 +121,8 @@ onBeforeUnmount(() => {
     </section>
   </main>
 </template>
+<style scoped>
+
+
+
+</style>
