@@ -37,7 +37,7 @@ const props = defineProps({
         </svg>
         {{ props.organization }}
       </span>
-      <h3 class="text-lg font-semibold text-gray-800">{{ props.title }}</h3>
+      <p class="text-lg font-semibold text-gray-800 break-words">{{ props.title }}</p>
       <div class="flex justify-between items-end mt-auto">
         <span class="bg-gray-200 text-gray-700 rounded-md text-sm">Completado</span>
         <span class="text-sm text-gray-500"> {{ props.completionDate }}</span>
