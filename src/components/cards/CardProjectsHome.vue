@@ -12,8 +12,8 @@
       </div>
       <div class="col-span-3 lg:ml-12 mt-4 md:mt-8 lg:mt-0">
         <h4 class="text-4xl">{{ title }}</h4>
-        <p class="text-gray-400 mt-2 mb-4">
-          {{ description.shortDescription }}
+        <p class="text-gray-400 mt-2 mb-4 line-clamp-6">
+          {{ description.longDescription }}
         </p>
         <ul class="flex flex-wrap gap-2">
           <li

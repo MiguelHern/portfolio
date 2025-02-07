@@ -73,7 +73,7 @@
 
       <a href="#" class="text-sm/6 font-semibold text-gray-900"
         @click.prevent="scrollToSection('education')">Educación</a>
-      <a href="#" class="text-sm/6 font-semibold text-gray-900" @click.prevent="scrollToSection('summary')">Acerca de
+      <a href="#" class="text-sm/6 font-semibold text-gray-900" @click.prevent="scrollToSection('summary')">Sobre
         mi</a>
       <a href="#" class="text-sm/6 font-semibold text-gray-900"
         @click.prevent="scrollToSection('technologies')">Tecnologías</a>

@@ -4,8 +4,8 @@ export const otherProjects = [
     title: 'FisioLab',
     description: {
       category: 'Expediente clínico digital',
-      shortDescription: `FisioLabs es una solución integral para clínicas de fisioterapia, que optimiza la administración de pacientes, la programación de citas y el seguimiento de tratamientos. Su interfaz intuitiva y sus características avanzadas permiten a los profesionales de la salud ofrecer servicios de calidad y mejorar la experiencia del paciente. Además, facilita la centralización de la información, lo que permite un acceso rápido y seguro a los datos, mejorando la eficiencia en la atención y reduciendo los errores humanos.`,
-      longDescription: `FisioLabs es una solución integral para clínicas de fisioterapia, que optimiza la administración de pacientes, la programación de citas y el seguimiento de tratamientos. Su interfaz intuitiva y sus características avanzadas permiten a los profesionales de la salud ofrecer servicios de calidad y mejorar la experiencia del paciente. Además, facilita la centralización de la información, lo que permite un acceso rápido y seguro a los datos, mejorando la eficiencia en la atención y reduciendo los errores humanos.`,
+      shortDescription: `FisioLabs es una plataforma diseñada para optimizar la gestión de pacientes, citas y tratamientos en clínicas de fisioterapia. Con una interfaz fácil de usar, facilita el acceso a la información, reduce errores y mejora la eficiencia de la atención.`,
+      longDescription: `FisioLabs es una herramienta innovadora pensada para clínicas de fisioterapia que busca simplificar la administración de pacientes y el seguimiento de tratamientos. Con funcionalidades como la programación de citas, el acceso rápido a datos y un diseño intuitivo, la plataforma permite a los fisioterapeutas ofrecer un servicio más organizado y de calidad. FisioLabs centraliza toda la información de manera segura, lo que reduce errores y mejora la productividad del equipo médico, al tiempo que ofrece una mejor experiencia a los pacientes.`
     },
     rol: 'Desarrollador Frontend',
     cover: {

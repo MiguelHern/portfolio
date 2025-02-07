@@ -8,6 +8,7 @@ import { education } from '@/data/education'
 import CardEducation from '@/components/cards/CardEducationHome.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import HomeCover from '@/components/HomeCover.vue'
+import AboutMe from '@/components/AboutMe.vue'
 
 const techCategories = {
   FrontEnd: technologiesFrontEnd,
@@ -70,43 +71,7 @@ onBeforeUnmount(() => {
         <CardEducation v-for="(edu, index) in education" :key="edu.id" v-bind="edu" :isFirst="index === 0" />
       </div>
     </section>
-
-    <section class="py-18" id="summary">
-      <h2 class="">Resumen</h2>
-      <div class="mt-18">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-12">
-          <h4>Mi enfoque</h4>
-          <p>
-            Soy ingeniero en sistemas computacionales con una sólida base en desarrollo backend,
-            pero mi mayor enfoque se encuentra en el desarrollo frontend. Me dedico a crear
-            interfaces web dinámicas y funcionales utilizando tecnologías como Vue.js, Tailwind CSS
-            y TypeScript. Además, tengo experiencia en la integración de APIs para desarrollar
-            aplicaciones interactivas que manejan datos en tiempo real y mejoran la experiencia del
-            usuario. Siempre busco soluciones innovadoras para optimizar el rendimiento y la
-            escalabilidad de las aplicaciones.
-          </p>
-
-          <h4>Intereses</h4>
-          <p>
-            Mi objetivo es siempre entregar soluciones limpias, escalables y fáciles de mantener. Me
-            apasiona la creación de interfaces de usuario que no solo sean atractivas, sino también
-            funcionales. Busco constantemente maneras de mejorar mis habilidades en la creación de
-            experiencias de usuario excepcionales y optimizar el rendimiento de las aplicaciones.
-            Creo firmemente en el trabajo colaborativo y en la importancia de la comunicación fluida
-            para construir soluciones de software de alta calidad.
-          </p>
-
-          <h4>Trayectoria</h4>
-          <p>
-            He trabajado en el desarrollo de aplicaciones web de alto rendimiento, consumiendo y
-            gestionando APIs para conectar el frontend con servicios backend de manera eficiente. En
-            proyectos para clientes en sectores como la salud y la educación, he contribuido a la
-            creación de soluciones innovadoras que optimizan la interacción con datos y mejoran la
-            experiencia del usuario.
-          </p>
-        </div>
-      </div>
-    </section>
+    <AboutMe/>
 
     <section class="py-18" id="technologies">
       <h2>Tecnologías</h2>
