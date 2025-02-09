@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue';
 import { useIntervalFn } from '@vueuse/core';
 import { projects } from '@/data/projects';
+import { RouterLink } from 'vue-router';
 
 const currentIndex = ref(0);
 const startX = ref(0);
@@ -58,14 +59,21 @@ const handleTouchEnd = () => {
         class="w-full flex-shrink-0 flex text-black text-2xl font-bold">
         <div class="flex flex-col">
           <img :src="project.cover.url" alt="" class="aspect-video">
-
         </div>
       </div>
 
     </div>
     <div class="flex justify-between gap-3 mt-3">
       <div>
-        <h3 class="mt-4">{{ projectTitle }}</h3>
+        <RouterLink :to="'/project/' + (currentIndex + 1)" class="flex items-center gap-3">
+          <h3 class="">{{ projectTitle }}</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </RouterLink>
+
         <ul class="flex flex-wrap gap-2 mt-2 z-10">
           <li v-for="tag in projects[currentIndex].tags" :key="tag"
             class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-xs">
@@ -75,13 +83,17 @@ const handleTouchEnd = () => {
       </div>
 
       <div class="flex items-center gap-3">
-        <button class="p-2 border-2 border-solid rounded-full text-black hover:text-primary focus:outline-none transition-colors duration-300 ease-in-out" @click="prevSlide">
+        <button
+          class="p-2 border-2 border-solid rounded-full text-black hover:text-primary focus:outline-none transition-colors duration-300 ease-in-out"
+          @click="prevSlide">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg>
         </button>
-        <button class="p-2 border-2 border-solid rounded-full text-black hover:text-primary focus:outline-none transition-colors duration-300 ease-in-out" @click="nextSlide">
+        <button
+          class="p-2 border-2 border-solid rounded-full text-black hover:text-primary focus:outline-none transition-colors duration-300 ease-in-out"
+          @click="nextSlide">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

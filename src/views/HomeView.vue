@@ -60,6 +60,16 @@ onBeforeUnmount(() => {
         aria-label="Ir al proyecto seleccionado" class="space-y-12 block mt-18">
         <CardProjectsHome v-bind="project" />
       </RouterLink>
+      <RouterLink :to="'/projects'" aria-label="Ir a la página de todos los proyectos"
+          class="flex gap-3 btn items-center bg-primary hover:bg-primary/90 text-white group rounded-md justify-center mt-12">
+          Ver todos los proyectos
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            aria-label="Icono de carpeta" stroke="currentColor"
+            class="size-6 group-hover:scale-110 transition-transform duration-300 ease-in-out">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </RouterLink>
 
 
     </section>
