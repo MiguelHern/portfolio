@@ -1,19 +1,23 @@
 export const otherProjects = [
   {
     id: '1',
-    title: 'FisioLab',
+    title: 'Portafolio',
     description: {
-      category: 'Expediente clínico digital',
-      shortDescription: `FisioLabs es una plataforma diseñada para optimizar la gestión de pacientes, citas y tratamientos en clínicas de fisioterapia. Con una interfaz fácil de usar, facilita el acceso a la información, reduce errores y mejora la eficiencia de la atención.`,
-      longDescription: `FisioLabs es una herramienta innovadora pensada para clínicas de fisioterapia que busca simplificar la administración de pacientes y el seguimiento de tratamientos. Con funcionalidades como la programación de citas, el acceso rápido a datos y un diseño intuitivo, la plataforma permite a los fisioterapeutas ofrecer un servicio más organizado y de calidad. FisioLabs centraliza toda la información de manera segura, lo que reduce errores y mejora la productividad del equipo médico, al tiempo que ofrece una mejor experiencia a los pacientes.`
+      category: 'Portafolio de proyectos',
+      shortDescription: `Aplicación desarrollada con Vue 3 y Tailwind, enfocada en presentar mis trabajos. Implementa una interfaz intuitiva y optimizada para mejorar la experiencia del usuario,`,
+      longDescription: `Portafolio donde muestro mis proyectos desarrollados, destacando mi enfoque en la creación de interfaces de usuario intuitivas y eficientes. Mi experiencia incluye el diseño UX/UI, el desarrollo frontend con tecnologías modernas y la integración con APIs para ofrecer soluciones dinámicas y funcionales.`
     },
     rol: 'Desarrollador Frontend',
     cover: {
-      url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png',
+      url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1739066699/eed454a8-0e60-46cc-83f7-ba05b5786cbc.png',
       description: 'Portada del proyecto FisioLabs',
     },
-    link: 'https://github.com/miusuario/fisiolab',
-    tags: ['Vue 3', 'Tailwind CSS', 'MySQL'],
+    links: {
+      gitHub: 'https://github.com/MiguelHern/portfolio',
+      project: 'https://portafolio-migueldev.netlify.app',
+    },
+    status: 'Completado',
+    tags: ['Vue 3', 'Tailwind CSS'],
     svg: `
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +70,7 @@ export const otherProjects = [
       url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1738032015/d0c6e9e7-9158-4893-8919-0b11528a1d6e.png',
       description: 'Portada del proyecto FisioLabs',
     },
-    link: 'https://github.com/miusuario/fisiolab',
+    link: 'https://github.com/MiguelHern/pokemon',
     tags: ['Vue 3', 'Tailwind CSS', 'MySQL'],
     svg: `
       <svg

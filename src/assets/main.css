@@ -8,6 +8,8 @@
   --color-dark-gray-rewashed: #1e1d1c;
   --color-dark-text: #898989;
   --color-dark-text-bgblack: #7A7A7A;
+  --color-muted: hsl(240, 3.7%, 15.9%);
+  --color-gray-border: #7c7c6f;
 
   /* 🎭 Colores Primarios */
   --color-primary: #0074b7; /* Azul eléctrico */
@@ -34,11 +36,12 @@
 @layer base {
   h1 {
     font-size: var(--text-5xl);
+    font-weight: var(--font-weight-black);
   }
 
   h2 {
     font-size: var(--text-xl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-black);
     text-align: center;
   }
 

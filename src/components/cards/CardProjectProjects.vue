@@ -5,15 +5,16 @@
         class="object-cover w-full h-full transition-transform group-hover:scale-105" />
 
 
-      <a v-if="link" href=""
-        class="absolute inset-0 bg-black/20 hidden justify-center items-center group-hover:flex text-primary" >
+      <a v-if="links" :href="links.project"
+        class="absolute inset-0 bg-black/20 hidden justify-center items-center group-hover:flex text-primary">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="size-8">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
         </svg>
       </a>
-      <RouterLink :to="'/project/' + id" v-else class="absolute inset-0 bg-black/20 hidden justify-center items-center group-hover:flex text-primary">
+      <RouterLink :to="'/project/' + id" v-else
+        class="absolute inset-0 bg-black/20 hidden justify-center items-center group-hover:flex text-primary">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -22,7 +23,14 @@
       </RouterLink>
     </div>
     <div class="p-4">
-      <h3 class="font-semibold text-xl mb-2">{{ title }}</h3>
+      <div class="flex justify-between items-center">
+        <h3 class="font-semibold text-xl mb-2">{{ title }}</h3>
+        <span class="bg-gray-200 text-gray-700 rounded-md text-sm ">
+          {{ status }}
+        </span>
+      </div>
+
+
       <p class="text-sm text-gray-600 mb-4 line-clamp-3">{{ description.shortDescription }}</p>
       <div class="flex flex-wrap gap-2">
         <span v-for="tag in tags" :key="tag"
@@ -31,8 +39,8 @@
         </span>
       </div>
     </div>
-    <div v-if="link" class="p-4 pt-0">
-      <a :href="link" target="_blank" class="inline-flex items-center gap-2 text-sm hover:underline">
+    <div v-if="links" class="p-4 pt-0">
+      <a :href="links.gitHub" target="_blank" class="inline-flex items-center gap-2 text-sm hover:underline">
         <svg width="24px" height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -52,7 +60,7 @@
             </g>
           </g>
         </svg>
-        View on GitHub
+        Ver en GitHub
       </a>
     </div>
   </div>
@@ -65,8 +73,9 @@ defineProps({
   title: String,
   description: String,
   cover: String,
-  link: String,
+  links: String,
   tags: Array,
+  status: String,
 })
 
 

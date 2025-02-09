@@ -1,33 +1,46 @@
-
 <template>
-  <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 md:px-8">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-8 text-center">Sobre Mí</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h3 class="text-2xl font-semibold mb-4">Mi Enfoque</h3>
-          <p class="text-gray-300">
-            Me apasiona crear soluciones tecnológicas innovadoras que mejoren la vida de las personas.
-            Mi enfoque se centra en el desarrollo de aplicaciones web y móviles intuitivas y eficientes,
-            siempre buscando el equilibrio perfecto entre funcionalidad y diseño.
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <span v-for="skill in skills" :key="skill" class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">
-              {{ skill }}
-            </span>
-          </div>
+  <section id="summary" class="py-18">
+    <h2 class="">Sobre Mí</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-18">
+      <div class="col-span-1 md:col-span-2 bg-white rounded-lg shadow-md p-6 h-full">
+        <div class="flex items-center space-x-4 mb-6">
+          <h2 class="text-2xl font-semibold">¡Hola! Soy Miguel Hernández</h2>
         </div>
-        <div class="space-y-6">
-          <h3 class="text-2xl font-semibold mb-4">Mis Intereses</h3>
-          <ul class="space-y-4">
-            <li v-for="interest in interests" :key="interest.title" class="flex items-start">
-              <component :is="interest.icon" class="w-6 h-6 mr-2 flex-shrink-0 text-blue-400" />
-              <div>
-                <h4 class="font-medium">{{ interest.title }}</h4>
-                <p class="text-gray-300">{{ interest.description }}</p>
-              </div>
-            </li>
-          </ul>
+        <p class="text-muted-foreground mb-4">
+          Soy un desarrollador frontend apasionado con experiencia en la creación de interfaces intuitivas y
+          eficientes. Me especializo en Vue.js, Tailwind CSS y el consumo de APIs, y disfruto diseñando experiencias
+          de usuario atractivas y optimizadas.
+        </p>
+        <div class="flex items-center space-x-4 mb-4">
+          <Briefcase class="w-5 h-5 text-primary" />
+          <p class="text-muted-foreground">
+            Mi experiencia incluye el desarrollo frontend con Vue 3, diseño de interfaces de usuario intuitivas y la
+            integración con APIs para optimizar procesos en aplicaciones web.
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 mb-4">
+          <Target class="w-5 h-5 text-primary" />
+          <p class="text-muted-foreground">
+            Mi objetivo es seguir creciendo como desarrollador frontend, creando soluciones eficientes y accesibles.
+            Siempre estoy buscando nuevas oportunidades para aprender y mejorar mis habilidades.
+          </p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <Heart class="w-5 h-5 text-primary" />
+          <p class="text-muted-foreground">
+            Cuando no estoy trabajando, me gusta ver series y películas, explorar nuevas tecnologías, aprender sobre
+            modelado 3D y sumergirme en el mundo de los videojuegos.
+          </p>
+        </div>
+
+      </div>
+      <div class="rounded-lg shadow-md p-6 h-full">
+        <h4 class="text-center mb-4">Habilidades blandas</h4>
+        <div class="w-48 mx-auto flex flex-wrap items-center justify-center gap-2">
+          <span v-for="skill in softSkills" :key="skill"
+            class="px-2 py-1 bg-primary text-white text-sm font-semibold rounded-full">
+            {{ skill }}
+          </span>
         </div>
       </div>
     </div>
@@ -35,37 +48,21 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { Code, Cpu, Globe, BookOpen } from 'lucide-vue-next'
+import { Briefcase, Target, Heart } from 'lucide-vue-next'
 
-const skills = ref([
-  'Vue.js', 'React', 'JavaScript', 'TypeScript', 'Node.js', 'Python', 'GraphQL', 'REST APIs'
-])
+const softSkills = [
+  'Trabajo en equipo',
+  'Comunicación efectiva',
+  'Adaptabilidad',
+  'Resolución de problemas',
+  'Gestión del tiempo',
+  'Pensamiento crítico',
+  'Aprendizaje continuo',
+  'Atención al detalle',
+];
 
-const interests = ref([
-  {
-    title: 'Desarrollo Web Moderno',
-    description: 'Exploro constantemente nuevas tecnologías y frameworks para crear experiencias web excepcionales.',
-    icon: Code
-  },
-  {
-    title: 'Inteligencia Artificial',
-    description: 'Me fascina el potencial de la IA para resolver problemas complejos y mejorar procesos.',
-    icon: Cpu
-  },
-  {
-    title: 'Tecnologías Emergentes',
-    description: 'Siempre estoy al tanto de las últimas tendencias en tecnología y su impacto en la industria.',
-    icon: Globe
-  },
-  {
-    title: 'Aprendizaje Continuo',
-    description: 'Creo en el aprendizaje constante y disfruto compartir conocimientos con la comunidad.',
-    icon: BookOpen
-  }
-])
 </script>
 
 <style scoped>
-/* Puedes agregar estilos adicionales aquí si lo deseas */
+/* Puedes agregar estilos adicionales aquí si es necesario */
 </style>

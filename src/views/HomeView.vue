@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
 
     <section class="py-18" id="education">
       <h2 class="">Educación</h2>
-      <div class="mt-18 md:text-start text-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="mt-18 md:text-start text-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         <CardEducation v-for="(edu, index) in education" :key="edu.id" v-bind="edu" :isFirst="index === 0" />
       </div>
     </section>

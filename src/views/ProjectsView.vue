@@ -1,13 +1,18 @@
 <template>
   <div class="mt-16">
-    <h2 class="text-2xl text-start mb-4">Proyectos destacados</h2>
-    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-      <CardProjects v-for="project in projects" :key="project.id" v-bind="project" />
-    </div>
-    <h2 class="text-2xl text-start my-4">Otros proyectos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <CardProjects v-for="project in otherProjects" :key="project.id" v-bind="project" />
-    </div>
+    <section class="pb-8">
+      <h2 class=" text-start font-thin text-3xl">Proyectos destacados</h2>
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 py-8">
+        <CardProjects v-for="project in projects" :key="project.id" v-bind="project" />
+      </div>
+    </section>
+    <section class="py-8">
+      <h2 class=" text-start font-thin text-3xl">Otros proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-8">
+        <CardProjects v-for="project in otherProjects" :key="project.id" v-bind="project" />
+      </div>
+    </section>
+
   </div>
 
 </template>

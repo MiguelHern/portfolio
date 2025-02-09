@@ -28,7 +28,7 @@
       </button>
     </div>
     <div class="absolute top-0 left-0 w-full h-full">
-      <div v-for="(style, index) in circles" :key="index" class="absolute rounded-full bg-primary/60 animate-float"
+      <div v-for="(style, index) in circles" :key="index" class="absolute rounded-full bg-primary/70 animate-float"
         :style="style">
       </div>
     </div>
@@ -48,7 +48,7 @@ onMounted(() => {
 });
 
 const circles = computed(() =>
-  Array.from({ length: 5 }, () => ({
+  Array.from({ length: 6 }, () => ({
     width: `${Math.random() * 150 + 50}px`,
     height: `${Math.random() * 150 + 50}px`,
     top: `${Math.random() * 100}%`,

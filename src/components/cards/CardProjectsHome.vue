@@ -19,7 +19,7 @@
           <li
             v-for="tag in tags"
             :key="tag"
-            class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-xs"
+            class="bg-muted text-sm font-medium px-2.5 py-0.5 rounded-xs border border-gray-800 shadow-sm"
           >
             {{ tag }}
           </li>
