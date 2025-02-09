@@ -59,10 +59,10 @@ export const otherProjects = [
   },
   {
     id: '2',
-    title: 'Fisionexo',
+    title: 'Pokemon Landing + Juego',
     description: {
-      category: 'Expediente clínico digital',
-      shortDescription: `FisioLabs es una solución integral para clínicas de fisioterapia, que optimiza la administración de pacientes, la programación de citas y el seguimiento de tratamientos. Su interfaz intuitiva y sus características avanzadas permiten a los profesionales de la salud ofrecer servicios de calidad y mejorar la experiencia del paciente. Además, facilita la centralización de la información, lo que permite un acceso rápido y seguro a los datos, mejorando la eficiencia en la atención y reduciendo los errores humanos.`,
+      category: 'Página',
+      shortDescription: `Proyecto parte de un curso utilizado como práctica con un toque personal.`,
       longDescription: `FisioLabs es una solución integral para clínicas de fisioterapia, que optimiza la administración de pacientes, la programación de citas y el seguimiento de tratamientos. Su interfaz intuitiva y sus características avanzadas permiten a los profesionales de la salud ofrecer servicios de calidad y mejorar la experiencia del paciente. Además, facilita la centralización de la información, lo que permite un acceso rápido y seguro a los datos, mejorando la eficiencia en la atención y reduciendo los errores humanos.`,
     },
     rol: 'Desarrollador Frontend',
@@ -71,7 +71,7 @@ export const otherProjects = [
       description: 'Portada del proyecto FisioLabs',
     },
     link: 'https://github.com/MiguelHern/pokemon',
-    tags: ['Vue 3', 'Tailwind CSS', 'MySQL'],
+    tags: ['Vue 3', 'Tailwind CSS','TypeScript', 'GSAP'],
     svg: `
       <svg
         xmlns="http://www.w3.org/2000/svg"
