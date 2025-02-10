@@ -78,7 +78,7 @@ onBeforeUnmount(() => {
     <section class="py-18" id="education">
       <h2 class="">Educación</h2>
       <div class="mt-18 md:text-start text-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        <CardEducation v-for="(edu, index) in education" :key="edu.id" v-bind="edu" :isFirst="index === 0" />
+        <CardEducation v-for="(edu, index) in education" :key="edu.id" v-bind="edu" :isFirst="index === 0" data-aos="fade-up" :data-aos-delay="(100*index)"/>
       </div>
     </section>
     <AboutMe/>
@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
         <div v-for="(techs, category) in techCategories" :key="category">
           <h3 class="text-sm sm:text-base md:text-lg">{{ category }}</h3>
           <ul class="grid grid-cols-3  lg:grid-cols-4 gap-4 my-12">
-            <CardTechnologies v-for="tech in techs" :key="tech.id" v-bind="tech" />
+            <CardTechnologies v-for="(tech, index) in techs" :key="tech.id" v-bind="tech" data-aos="fade-up" :data-aos-delay="(100*index)"/>
           </ul>
         </div>
       </div>
