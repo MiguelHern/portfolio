@@ -107,9 +107,8 @@
               Proyectos
             </button>
             <RouterLink :to="'/projects'" aria-label="Ir a la página de todos los proyectos" @click="toggleMenuMedimum()"
-              class="block font-semibold text-gray-900">
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 cursor-default">
               Ver todos los proyectos
-              <span class="absolute inset-0"></span>
             </RouterLink>
             <button @click.prevent="scrollToSection('education')"
               class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
