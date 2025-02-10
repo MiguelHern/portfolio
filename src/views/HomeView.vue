@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
   <main>
     <HomeCover />
 
-    <section v-if="isMobile" class="py-18" id="projectsss">
+    <section v-if="isMobile" class="py-18" id="projects">
       <h2>Proyectos</h2>
       <div class="space-y-12 mt-18">
         <CarouselComponent />
