@@ -108,7 +108,7 @@ export const projects = [
         description: 'Calendario',
       },
       {
-        url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1737587742/ob6w8i1rapxxir9v1kn9.png',
+        url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1739200256/19589608-5513-400e-9193-30cec613fc1a.png',
         description: 'Vista de perfil de alumno',
       },
     ],
