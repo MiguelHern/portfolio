@@ -65,52 +65,5 @@ export const projects = [
       },
     ],
   },
-  {
-    id: '2',
-    title: 'General10',
-    description: {
-      category: 'Gestión de citas',
-      shortDescription:
-        'General10 es una aplicación creada para centralizar la información de los alumnos que los atienden psicológicamente',
-      longDescription:
-        'General10 es una aplicación diseñada para optimizar la gestión de la información de los alumnos atendidos psicológicamente, facilitando el acceso y la organización de sus datos, tratamientos y citas. Esta herramienta permite a los profesionales de la psicología mejorar la atención a los estudiantes, automatizar procesos y mantener un registro eficiente de cada interacción, garantizando una atención personalizada y eficiente.',
-    },
-    rol: 'Desarrollador Frontend',
-    cover: {
-      url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1738032015/d0c6e9e7-9158-4893-8919-0b11528a1d6e.png',
-      description: 'Inicio',
-    },
-    link: false,
-    tags: ['Vue.js', 'C#', '.NET', 'JavaScript', 'Tailwind', 'MySQL'],
-    svg: "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'><path stroke-linecap='round' stroke-linejoin='round' d='M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z'/></svg>",
-    challenge:
-      'Centralizar y gestionar la información de los estudiantes atendidos psicológicamente, mejorando la eficiencia en la atención y el acceso a los datos.',
-    opportunity:
-      'Desarrollar una plataforma que permita a los psicólogos gestionar de manera eficiente las citas, tratamientos y registros de los estudiantes, optimizando su tiempo y recursos.',
-    timeline: {
-      start: 'Enero 2024',
-      end: 'Junio 2024',
-    },
-    responsibilities: ['Diseño UX', 'FrontEnd'],
-    technologies: ['JavaScript', 'Vue.js', 'Tailwind', 'MySQL'],
-    myRole: {
-      'Diseño de interfaz':
-        'Colaboré en la creación del diseño visual, el flujo de la aplicación y la estructura de la interfaz utilizando Figma.',
-      'Desarrollo FrontEnd':
-        'Colaboré en la creación de las pantallas de la aplicación utilizando Vue 3 y Tailwind, haciendo la aplicación completamente responsiva para todos los dispositivos.',
-      'Integración de funciones':
-        'Colaboré en la creación de interfaces para la gestión de citas, calendario, gestión de usuarios y psicólogos, conectando el frontend con el backend a través de APIs REST.',
-      'Base de datos': 'Colaboré en el diseño e implementación de la base de datos en MySQL.',
-    },
-    gallery: [
-      {
-        url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1738888120/69a9c8a3-f837-474e-a515-61be0c7b6c3f.png',
-        description: 'Calendario',
-      },
-      {
-        url: 'https://res.cloudinary.com/djfokdod6/image/upload/f_webp/v1739200256/19589608-5513-400e-9193-30cec613fc1a.png',
-        description: 'Vista de perfil de alumno',
-      },
-    ],
-  },
+  
 ]

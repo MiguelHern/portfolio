@@ -22,6 +22,4 @@ import CardProjects from '@/components/cards/CardProjectProjects.vue'
 import { projects } from '@/data/projects';
 import { otherProjects } from '@/data/otherProjects';
 
-
-
 </script>
